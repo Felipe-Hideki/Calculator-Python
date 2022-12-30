@@ -33,13 +33,13 @@ def testing():
     result = parse(equation)
     return result
 
+test = False
 
 #if this is the main script
 if __name__ == "__main__":
     alive = True
-    test = True
     args = sys.argv
-    if(len(args) > 1 and args[1] == "test" or test == True):
+    if((len(args) > 1 and args[1] == "test") or test == True):
         print(testing())
         alive = False
     
