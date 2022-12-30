@@ -42,6 +42,7 @@ if __name__ == "__main__":
     if((len(args) > 1 and args[1] == "test") or test == True):
         print(testing())
         alive = False
+        input('press enter key to coninue...')
     
     while alive:
         print("Write your equation:")
@@ -49,5 +50,5 @@ if __name__ == "__main__":
         result = parse(val)
 
         print(f'result = {result}')
-        input('press any key to continue...')
+        input('press enter key to continue...')
         os.system('clear')
